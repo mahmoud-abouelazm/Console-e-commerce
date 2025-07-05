@@ -76,15 +76,15 @@ Mohammed.cart.Add(primeMembership, 10);
 
 **Output**:
 ```
-The wanted item is expired
 ** Checkout receipt **
 Quantity/Product    Sub total
-10x PrimeMembership 1000
+1x GiftCard         100
+1x PrimeMembership  100
 ------------------------------
-Subtotal            1000
+Subtotal            200
 Shipping            0
-Amount              1000
-Current balance     0
+Amount              200
+Current balance     800
 Thank you for choosing us
 ------------------------------
 ```
