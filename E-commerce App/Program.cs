@@ -92,7 +92,7 @@ namespace Ecommerce
             System.Console.WriteLine("Weight");
             foreach (var item in shippables)
             {
-                double itemWaight = item.Value * item.Key.weightInGrams;
+                double itemWaight =  item.Key.GetWeight(item.Value);
                 totalWeight += itemWaight;
                 System.Console.Write($"{item.Value}x {item.Key.GetName()}".PadRight(20, ' '));
                 System.Console.WriteLine(convertWeightUnit(itemWaight));
