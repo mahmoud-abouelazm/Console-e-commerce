@@ -15,7 +15,7 @@ namespace Ecommerce
 
             Biscuits biscuits = new(10, 100, 15, DateTime.Now.AddMonths(12));
             Cheese cheese = new(50, 50, 100, DateTime.Now.AddMonths(-12));
-            GiftCard giftCard = new(100, 100);
+            GiftCard giftCard = new(100, 100,DateTime.Now.AddMonths(12));
             Mobile mobile = new(10000, 20 , 200);
             PrimeMembership primeMembership = new(100, 100);
             TV tV = new(5000, 20 , 10000);
@@ -28,8 +28,8 @@ namespace Ecommerce
             Checkout(Mahmoud);
 
             // Second test ( success - without shipping )
-            Mohammed.cart.Add(giftCard, 10);
-            Mohammed.cart.Add(primeMembership, 10);
+            Mohammed.cart.Add(giftCard, 1);
+            Mohammed.cart.Add(primeMembership, 1);
             Checkout(Mohammed);
 
             // Third test (fail - quantity limit + empty cart)

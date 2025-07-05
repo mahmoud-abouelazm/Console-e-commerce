@@ -5,8 +5,7 @@ namespace E_commerce_App.Products;
 
 public class GiftCard : ExpirableProduct
 {
-    public GiftCard(double price, int quantity) : base(nameof(GiftCard), price, quantity)
+    public GiftCard( double price, int quantity, DateTime expiryDate) : base(nameof(GiftCard), price, quantity, expiryDate)
     {
-
     }
 }
